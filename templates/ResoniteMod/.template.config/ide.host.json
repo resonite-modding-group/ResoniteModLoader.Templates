@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json.schemastore.org/ide.host",
+	"defaultPersistenceScope": "none",
+	"symbolInfo": [
+		{
+			"id": "Author",
+			"persistenceScope": "shared",
+			"persistenceScopeName": "ResoniteModLoader"
+		}
+	],
+	"icon": "ide/icon.ico"
+}
