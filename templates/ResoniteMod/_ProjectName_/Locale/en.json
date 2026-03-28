@@ -1,8 +1,6 @@
 {
 	"localeCode": "en",
-	"authors": [
-		"_ModAuthorName_"
-	],
+	"authors": ["_ModAuthorName_"],
 	"messages": {
 		"Dummy": "Dummy"
 	}

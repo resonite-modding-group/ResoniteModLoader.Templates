@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 
 [assembly: AssemblyTitle("_ProjectName_")]
 [assembly: AssemblyProduct("_ProjectName_")]
