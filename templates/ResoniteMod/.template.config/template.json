@@ -44,9 +44,39 @@
 			"type": "parameter",
 			"datatype": "string",
 			"displayName": "Mod Link",
-			"description": "Link to the mod download/source.",
-			"replaces": "_ModLink_",
+			"description": "Link to the mod source repo. (leave empty to auto-generate: https://github.com/[Author]/[ProjectName])",
 			"defaultValue": ""
+		},
+		"LinkComputed": {
+			"type": "generated",
+			"generator": "coalesce",
+			"parameters": {
+				"sourceVariableName": "Link",
+				"fallbackVariableName": "DefaultLink"
+			},
+			"replaces": "_ModLink_",
+		},
+		"DefaultLink": {
+			"type": "generated",
+			"generator": "join",
+			"parameters": {
+				"symbols": [
+					{
+						"type": "const",
+						"value": "https://github.com/"
+					},{
+						"type": "ref",
+						"value": "Author"
+					},{
+						"type": "const",
+						"value": "/"
+					},{
+						"type": "ref",
+						"value": "name"
+					}
+				],
+				"separator": ""
+			}
 		},
 		"HostIdentifier": {
 			"type": "bind",
