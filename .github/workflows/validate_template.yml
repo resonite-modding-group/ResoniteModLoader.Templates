@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Template
         run: |
-          dotnet new install ./ResoniteModLoader.Templates/templates/
+          dotnet new install ./templates/ResoniteMod/
 
       - name: Test rmlmod Template
         run: |
