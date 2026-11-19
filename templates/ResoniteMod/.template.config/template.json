@@ -22,7 +22,8 @@
 			"displayName": "Mod ID",
 			"description": "Unique mod ID in reverse domain name notation (e.g. com.example.ResoniteMod).",
 			"replaces": "_ModId_",
-			"isRequired": true
+			"isRequired": false,
+			"defaultValue": ""
 		},
 		"Author": {
 			"type": "parameter",
